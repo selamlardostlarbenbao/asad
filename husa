@@ -333,6 +333,14 @@ local Templates = {
         Visible = true,
     },
 
+    Label = {
+        Text = "",
+        Size = 14,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        Visible = true,
+    },
+
+
     --// Addons \\-
     KeyPicker = {
         Text = "KeyPicker",
