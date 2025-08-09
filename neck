@@ -333,13 +333,7 @@ local Templates = {
         Visible = true,
     },
 
-    Label = {
-        Text = "",
-        Size = 14,
-        TextXAlignment = Enum.TextXAlignment.Left,
-        Visible = true,
-    },
-
+    
 
     --// Addons \\-
     KeyPicker = {
@@ -2728,7 +2722,10 @@ do
             table.insert(Labels, Label)
         end
 
-        Options[Idx] = Label
+        if Data.Idx then
+            Options[Data.Idx] = Label
+        end
+
 
         return Label
     end
